@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .student-card {
+            width: 340px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #123c69, #0074b7);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .school-logo {
+            width: 65px;
+            height: 65px;
+            background: white;
+            color: #123c69;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 800;
+            margin: 0 auto 12px;
+            border: 3px solid #b8e0ff;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 11px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .profile {
+            text-align: center;
+            padding: 25px 20px 15px;
+        }
+
+        .profile img {
+            width: 115px;
+            height: 115px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #d8eaff;
+            background: #eee;
+        }
+
+        .profile h3 {
+            margin-top: 12px;
+            color: #123c69;
+            font-size: 21px;
+        }
+
+        .profile .course {
+            color: #0074b7;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .details {
+            padding: 15px 25px 25px;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eeeeee;
+            font-size: 12px;
+        }
+
+        .label {
+            color: #777;
+        }
+
+        .value {
+            color: #222;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .footer {
+            background: #123c69;
+            color: white;
+            text-align: center;
+            padding: 13px;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .footer span {
+            color: #8bd3ff;
+        }
+
+        @media (max-width: 380px) {
+            .student-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="student-card">
+
+        <div class="header">
+            <div class="school-logo">SC</div>
+            <h2>STUDENT ID CARD</h2>
+            <p>BESTLINK COLLEGE OF THE PHILIPPINES</p>
+        </div>
+
+        <div class="profile">
+            
+            <h3>Sebastian Tapia</h3>
+            <p class="course">Bachelor of Science in Information Technology</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-row">
+                <span class="label">Student ID</span>
+                <span class="value">2026-001</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">Year Level</span>
+                <span class="value">1st Year</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">Department</span>
+                <span class="value">Information Technology</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">School Year</span>
+                <span class="value">2026–2027</span>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>
